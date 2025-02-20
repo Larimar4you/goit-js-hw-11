@@ -4,9 +4,9 @@
   | default @import url()
   |============================
 */
+
 /* Common styles */
 @import url('./reset.css');
 @import url('./form_and_gallery.css');
 
 @import url('./styles.css');
-

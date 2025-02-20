@@ -3,6 +3,8 @@
 // npm install izitoast --save
 
 // Імпортуємо функціїimport { fetchImages } from "./js/pixabay-api";
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 import { fetchImages } from './js/picabay-api';
 import { renderGallery } from './js/render-functions';

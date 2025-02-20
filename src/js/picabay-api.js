@@ -10,7 +10,7 @@ export async function fetchImages(query, page = 1, perPage = 12) {
       orientation: 'horizontal',
       safesearch: 'true',
       page,
-      er_page: perPage,
+      per_page: perPage,
     });
 
     const response = await fetch(`${BASE_URL}?${params.toString()}`);

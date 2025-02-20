@@ -1,27 +1,9 @@
-// Описаний у документації
+// Импорты
 import iziToast from 'izitoast';
-// Додатковий імпорт стилів
 import 'izitoast/dist/css/iziToast.min.css';
 
-// npm install izitoast --save
-
-// Описаний у документації
 import SimpleLightbox from 'simplelightbox';
-// Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
-// npm install simplelightbox
-
-// Описаний у документації
-import iziToast from 'izitoast';
-// Додатковий імпорт стилів
-import 'izitoast/dist/css/iziToast.min.css';
-// npm install izitoast --save
-
-// Описаний у документації
-import SimpleLightbox from 'simplelightbox';
-// Додатковий імпорт стилів
-import 'simplelightbox/dist/simple-lightbox.min.css';
-// npm install simplelightbox
 
 const galleryEl = document.querySelector('.gallery');
 
@@ -57,20 +39,19 @@ function createImageCardMarkup({
         <p class="info-item"><b>Downloads:</b> ${downloads}</p>
       </div>
     </a>
- `;
-}
-
-// Функция показа сообщения об отсутствии результатов
-export function showNoResultsMessage() {
-  iziToast.error({
-    title: 'Error',
-    message:
-      'Sorry, there are no images matching your search query. Please try again!',
-    position: 'topRight',
-  });
+  `;
 }
 
 // Функция очистки галереи
 export function clearGallery() {
   galleryEl.innerHTML = '';
+}
+
+// Функция отображения сообщения об отсутствии результатов
+export function showNoResultsMessage() {
+  iziToast.info({
+    title: 'Info',
+    message: 'No images found for your search query.',
+    position: 'topRight',
+  });
 }
