@@ -34,7 +34,7 @@ form.addEventListener('submit', async event => {
       showNoResultsMessage();
     }
   } catch (error) {
-    console.error(error); // Виведення помилки в консоль
+    console.error(error);
     showError(`Something went wrong. Please try again!`);
   } finally {
     toggleLoader(false);
