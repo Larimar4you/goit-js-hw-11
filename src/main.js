@@ -35,7 +35,7 @@ form.addEventListener('submit', async event => {
     }
   } catch (error) {
     console.error(error); // Виведення помилки в консоль
-    // showError("Something went wrong. Please try again!");
+    showError(`Something went wrong. Please try again!`);
   } finally {
     toggleLoader(false);
   }
